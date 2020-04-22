@@ -15,10 +15,14 @@ public class Main_Bai1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        PhepTinh s1 = new PhepCong();
+         //Phép cộng
+        Context s1 = new Context();       
         s1.setTinhToan(new Cong());
-        System.out.println("75 + 12 = "+s1);
+        System.out.println("75 + 12 = "+ s1.tinh(75, 12));
+        //Phép trừ
+        Context s2 = new Context();
+        s2.setTinhToan(new Tru());
+        System.out.println("58 - 78 = "+s2.tinh(58, 78));
     }
     
 }

@@ -9,10 +9,10 @@ package bai1;
  *
  * @author Admin
  */
-public abstract class PhepTinh {
+public class Context {
     private ITinhToan tinhToan;
 
-    public PhepTinh() {
+    public Context() {
     }
 
     
@@ -20,5 +20,7 @@ public abstract class PhepTinh {
         this.tinhToan = tinhToan;
     }
     
-    public abstract float tinh(float a, float b);
+    public float tinh(float a, float b){
+        return this.tinhToan.tinh(a, b);
+    }
 }
